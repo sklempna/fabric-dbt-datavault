@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: souces
+    schema: sources        # Replace this with the schema where `raw_customers` resides
+    tables:
+      - name: raw_customers           # This is the name of the table in the database (e.g., raw_customers)
+        description: "Raw customer data loaded from external ETL processes."

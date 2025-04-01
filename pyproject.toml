@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "fabric-dbt-datavault"
+version = "0.1.0"
+description = ""
+authors = ["sklempna <60576241+sklempna@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "fabric_dbt_datavault"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+dbt-fabric = "^1.9.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

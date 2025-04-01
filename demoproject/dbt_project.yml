@@ -1,0 +1,35 @@
+name: 'demoproject'
+
+config-version: 2
+version: '0.1'
+
+profile: 'demoproject'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analysis"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets:
+    - "target"
+    - "dbt_modules"
+    - "logs"
+
+require-dbt-version: [">=1.0.0", "<2.0.0"]
+
+seeds:
+  demoproject:
+    schema: src
+
+models:
+  demoproject:
+    staging:
+      schema: staging
+    raw_vault:
+      schema: raw_vault
+    business_vault:
+      schema: business_vault
+    mart:
+      schema: mart

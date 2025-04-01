@@ -1,0 +1,11 @@
+demoproject:
+  target: fabric-dev
+  outputs:
+    fabric-dev:
+      authentication: CLI
+      database: <enter fabric warehouse name here>
+      driver: ODBC Driver 18 for SQL Server
+      host: <enter connection string to fabric warehouse here>
+      schema: dbo
+      threads: 4
+      type: fabric
