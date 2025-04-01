@@ -31,5 +31,3 @@ models:
       schema: raw_vault
     business_vault:
       schema: business_vault
-    mart:
-      schema: mart
